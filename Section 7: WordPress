@@ -1,0 +1,11 @@
+<?php
+/*
+Plugin Name: Greeting Plugin
+Description: Displays a greeting message with shortcode.
+*/
+
+function greeting_shortcode() {
+    return "Welcome to My Site!";
+}
+add_shortcode('greeting', 'greeting_shortcode');
+?>
